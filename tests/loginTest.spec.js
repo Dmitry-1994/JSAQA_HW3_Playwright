@@ -96,9 +96,9 @@ test("Invalid login with invalid userData", async ({ page }) => {
     });
 
     await expect(
-        page.locator("[data-testid=\"login-error-hint\"]")
+        page.locator("[data-testid=login-error-hint']")
     ).toBeVisible();
     await expect(
-        page.locator("[data-testid=\"login-error-hint\"]")
+        page.locator("[data-testid='login-error-hint']")
     ).toContainText("Вы ввели неправильно логин или пароль.");
 });
